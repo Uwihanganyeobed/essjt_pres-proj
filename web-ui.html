@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WebDev Kids Project</title>
+    <style>
+      /* Reset some spacing */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 0 20px;
+      }
+
+      /* Navbar styling */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .design-form {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.design-form h2 {
+  font-size: 36px;
+  color: orangered;
+}
+
+.design-form form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.design-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.design-form input,
+.design-form select,
+.design-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.design-form button {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: orangered;
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .links a:hover {
+        color: orangered;
+      }
+
+      /* Hero section */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+        padding: 60px 0;
+      }
+
+      .hero .text {
+        /* Left side text block */
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        color: orangered;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      .hero button {
+        padding: 15px 25px;
+        background-color: orangered;
+        color: white;
+        border: none;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .hero img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* Courses section */
+      .courses {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .courses h2 {
+        font-size: 36px;
+        color: orangered;
+      }
+
+      .line {
+        width: 150px;
+        height: 4px;
+        background-color: orangered;
+        margin: 10px auto 30px auto;
+        border-radius: 4px;
+      }
+
+      .course-grid {
+        /* Grid used instead of flex here for layout clarity */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .card {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 320px;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .card button {
+        width: 100%;
+        padding: 12px;
+        background-color: orangered;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 50px;
+        padding: 20px 0;
+        text-align: center;
+        color: #999;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <div class="logo">WebKidZone</div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="text">
+        <h1>Become a Web Dev Hero</h1>
+        <p>Kickstart your web development journey with fun and practical lessons designed just for kids!</p>
+        <button>Get Started</button>
+      </div>
+      <div>
+        <img src="./logo.jpg" alt="Web learning" />
+      </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses">
+      <h2>Our Courses</h2>
+      <div class="line"></div>
+
+      <!-- Grid layout used here -->
+      <div class="course-grid">
+        <div class="card">
+          <img src="./logo.jpg" alt="HTML Course" />
+          <p><strong>HTML Basics</strong></p>
+          <p>Learn how to build your first webpage using HTML tags and structure.</p>
+          <button>Start Course</button>
+        </div>
+        <div class="card">
+          <img src="./logo.jpg" alt="CSS Course" />
+          <p><strong>CSS Styling</strong></p>
+          <p>Make your websites beautiful using colors, fonts, and layout techniques.</p>
+          <button>Start Course</button>
+        </div>
+        <div class="card">
+          <img src="./logo.jpg" alt="Projects" />
+          <p><strong>Mini Projects</strong></p>
+          <p>Practice what you learn by creating mini projects like landing pages.</p>
+          <button>Start Course</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this after the Courses section -->
+<section class="design-form">
+  <h2>Design Your Own Web Page</h2>
+  <div class="line"></div>
+  <form>
+    <label for="page-title">Page Title:</label><br />
+    <input type="text" id="page-title" name="page-title" placeholder="Enter your page title" /><br /><br />
+
+    <label for="bg-color">Background Color:</label><br />
+    <input type="color" id="bg-color" name="bg-color" /><br /><br />
+
+    <label for="font-style">Font Style:</label><br />
+    <select id="font-style" name="font-style">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select><br /><br />
+
+    <label for="message">Add a Message:</label><br />
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea><br /><br />
+
+    <button type="submit">Create Design</button>
+  </form>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; 2025 WebKidZone. All rights reserved.
+    </footer>
+  </body>
+</html>
