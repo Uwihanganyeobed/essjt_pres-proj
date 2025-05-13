@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mini Calculator</title>
+  </head>
+  <body>
+    <h2>🧮 Mini Calculator</h2>
+
+    <!-- Input fields for numbers -->
+    <input id="num1" type="number" placeholder="First number">
+    <input id="num2" type="number" placeholder="Second number">
+
+    <!-- Operation buttons -->
+    <br><br>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+
+    <!-- Area to display result -->
+    <p id="result"></p>
+
+    <script>
+      function calculate(operator) {
+        // Get numbers from input fields
+        const number1 = parseFloat(document.getElementById('num1').value);
+        const number2 = parseFloat(document.getElementById('num2').value);
+        let total;
+
+        // Do the correct operation
+        if (operator === '+') {
+          total = number1 + number2;
+        } else if (operator === '-') {
+          total = number1 - number2;
+        } else if (operator === '*') {
+          total = number1 * number2;
+        } else if (operator === '/') {
+          total = number1 / number2;
+        }
+
+        // Show the result
+        document.getElementById('result').textContent = 'Result: ' + total;
+      }
+    </script>
+  </body>
+</html>
