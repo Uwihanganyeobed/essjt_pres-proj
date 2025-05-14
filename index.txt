@@ -87,3 +87,20 @@ CSS Position
 Position Absolute and Relative
 
 Finish the Project
+
+
+
+
+✅ Thursday – GitHub Focus
+Git Basics & GitHub Workflow
+
+Branching and Merging
+
+GitHub Collaboration
+
+✅ Friday – Figma Focus
+Figma Intemrface & Frames
+1
+Components & Auto Layout
+
+Prototyping & Sharing
